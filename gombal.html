@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Nembak dia haha ❤️</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: #ffe6e6;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: #e60073;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    img {
+      width: 150px;
+      margin: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #btn_mau {
+      background-color: #ff4d79;
+      color: white;
+    }
+
+    #btn_gamau {
+      background-color: #999;
+      color: white;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hai bocil 😭! ❤️</h1>
+  <img src="https://c.tenor.com/Z8oUHZrLc0AAAAAC/love.gif" alt="love">
+  <h2>Maukah kamu menjadi pacarku? 😍</h2>
+
+  <button id="btn_mau" onclick="alert('Yeeey! kita jadian yaww ❤️')">Mau</button>
+  <button id="btn_gamau" onclick="gamau(this)">Gak Mau</button>
+
+  <script>
+    function gamau(id) {
+      var mau = document.getElementById('btn_mau');
+      var i = Math.floor(Math.random() * 300) + 1;
+      var j = Math.floor(Math.random() * 100) + 1;
+      var a = mau.offsetTop;
+
+      id.style.left = i + "px";
+      id.style.top = (a + j) + "px";
+    }
+  </script>
+</body>
+</html>
